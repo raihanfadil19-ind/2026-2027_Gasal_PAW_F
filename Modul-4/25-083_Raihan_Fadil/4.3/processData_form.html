@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+</head>
+<body>
+
+<h2>Register</h2>
+
+<form action="processData.php" method="POST">
+    <fieldset>
+        <legend>Person Details</legend>
+
+        <label>Surname:</label>
+        <input type="text" name="surname">
+        <br><br>
+
+        <label>Email address:</label>
+        <input type="text" name="email">
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" name="passwd">
+        <br><br>
+
+        <label>Street Address:</label>
+        <textarea name="address" rows="3" cols="25"></textarea>
+        <br><br>
+
+        <label>State:</label>
+        <select name="state">
+            <option value="-1">Choose your state</option>
+            <option value="1">Australian Capital Territory</option>
+            <option value="2">Queensland</option>
+            <option value="3">New South Wales</option>
+            <option value="4">Victoria</option>
+            <option value="5">South Australia</option>
+            <option value="6">Western Australia</option>
+            <option value="7">Northern Territory</option>
+            <option value="8">Tasmania</option>
+            <option value="9">Indonesia</option>
+        </select>
+        <br><br>
+
+        <input type="hidden" name="country" value="Australia">
+
+        <label>Gender:</label>
+        <input type="radio" name="sex" value="male"> Male
+        <input type="radio" name="sex" value="female"> Female
+        <br><br>
+
+        <label>Vegetarian?</label>
+        <input type="checkbox" name="vegetarian" value="Yes">
+        <br><br>
+
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </fieldset>
+</form>
+
+</body>
+</html>
